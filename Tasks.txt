@@ -1,4 +1,7 @@
-1. Figure out how DRTLS would give 3D position.
+1. "Urgent" Figure out how DRTLS would give 3D position.
 	Best Resources:
 	i) https://drive.google.com/drive/u/0/folders/1IXIhT8xXFfAquVWT0nXN3AUHOB7yifgS
 	ii)https://drive.google.com/drive/u/0/folders/1BQQkJqV-YI4dSmwERM1IhYPnbe5UDb7p
+2. "Urgent"Figure out how AR viewwer would work:
+	i) https://shop.aryzon.com/products/aryzon-pop-up?_ga=2.49578918.1642977671.1560239269-469556769.1560239269
+3. "Later" When the new MPU comes on sat we have to see if its working.
