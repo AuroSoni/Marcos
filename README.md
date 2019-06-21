@@ -1,5 +1,5 @@
 # Marcos.
 A real-time mixed reality interactive game.</br>
-Made by: bchaa log :)
+Made by: 
 Enter the DOJO
 @ITSP_IITBombay
