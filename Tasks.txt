@@ -1,4 +1,4 @@
-1. "Urgent" Figure out how DRTLS would give 3D position.
+1. "Urgent" Figure out how to make a tag or anchor using DWM1001 module to be used in apk(link iii).
 	Best Resources:
 	i) https://drive.google.com/drive/u/0/folders/1IXIhT8xXFfAquVWT0nXN3AUHOB7yifgS
 	ii)https://drive.google.com/drive/u/0/folders/1BQQkJqV-YI4dSmwERM1IhYPnbe5UDb7p
