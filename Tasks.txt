@@ -1,9 +1,11 @@
-1. "Delayed" Figure out how to make a tag or anchor using DWM1001 module to be used in apk(link iii) or with arduino.
+1. "Urgent" Figure out how to make a tag or anchor using DWM1001 module to be used in apk(link iii) or with arduino.
 	Best Resources:
 	i) https://drive.google.com/drive/u/0/folders/1IXIhT8xXFfAquVWT0nXN3AUHOB7yifgS
 	ii)https://drive.google.com/drive/u/0/folders/1BQQkJqV-YI4dSmwERM1IhYPnbe5UDb7p
 	iii)https://www.youtube.com/watch?v=hI8EaU5nOmI
-2. "Urgent"Figure out how AR viewer would work and its compatiblity.
+2. "Delayed"Figure out how AR viewer would work and its compatiblity.
 	i) https://shop.aryzon.com/products/aryzon-pop-up?_ga=2.49578918.1642977671.1560239269-469556769.1560239269
-3. "Later" When the new MPU comes on sat we have to see if its working.
+3. "Urgent" Modify the library and code for MPU9250 and prepare a simulation to visually analyse the output.
+	    The filtering is very very important to us because MPU data determines our bullet trajectory and 
+	    even slight deviations can cause landslide effect.
 4. "Confirmed" Ask sensiors about ITSP Refund - Refund will be given full but one year later.
