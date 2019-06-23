@@ -8,4 +8,3 @@
 3. "Urgent" Modify the library and code for MPU9250 and prepare a simulation to visually analyse the output.
 	    The filtering is very very important to us because MPU data determines our bullet trajectory and 
 	    even slight deviations can cause landslide effect.
-4. "Confirmed" Ask sensiors about ITSP Refund - Refund will be given full but one year later.
