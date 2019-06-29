@@ -17,8 +17,12 @@ void loop()
     static uint32_t prev_ms = millis();
     if ((millis() - prev_ms) > 16)
     {
-        mpu.update();
-        mpu.print();
+      mpu.update();
+    }
+    if ((millis() - prev_ms) > 5000)
+    {
+        
+        //mpu.print();
 
         Serial.print("roll  (x-forward (north)) : ");
         Serial.println(mpu.getRoll());
@@ -26,6 +30,9 @@ void loop()
         Serial.println(mpu.getPitch());
         Serial.print("yaw   (z-down (down))     : ");
         Serial.println(mpu.getYaw());
+        Serial.println();
+        Serial.println();
+        Serial.println();
 
         prev_ms = millis();
     }
