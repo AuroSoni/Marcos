@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DistanceTool\DistanceTool.cs" />
      <Compile Include="Assets\ProCore\ProGrids\Classes\pg_Constant.cs" />
      <Compile Include="Assets\ProCore\ProGrids\Classes\pg_Enum.cs" />
      <Compile Include="Assets\ProCore\ProGrids\Classes\pg_IconUtility.cs" />
@@ -62,12 +63,16 @@
      <Compile Include="Assets\ProCore\ProGrids\MonoBehaviour\pg_IgnoreSnap.cs" />
      <None Include="Assets\ProCore\ProGrids\About\pc_AboutEntry_ProGrids.txt" />
      <None Include="Assets\ProCore\ProGrids\Shader\pg_GridShader.shader" />
+     <None Include="Assets\DistanceTool\READ ME.txt" />
      <None Include="Assets\ProCore\ProGrids\About\changelog.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -87,17 +92,14 @@
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ugui.Editor">
  <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.ugui.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/Anish/Desktop/git-itsp/Marcos/TL 3D MAP 1/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/2019.3.0a5/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
