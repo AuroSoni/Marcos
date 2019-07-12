@@ -40,9 +40,9 @@ void draw()
        
        + "Gyroscope :" + "\n"
        
-       "rads/sec"
-       "rads/sec"
-       "rads/sec"
+       + "x: " + nfp(gyroscope.x, 1, 2) + "rads/sec" + "\n"
+       + "y: " + nfp(gyroscope.y, 1, 2) + "rads/sec" + "\n"
+       + "z: " + nfp(gyroscope.z, 1, 2) + "rads/sec" + "\n"
        
        
        + "Linear Acceleration :" + "\n"
@@ -56,4 +56,54 @@ void draw()
        + "x: " + nfp(rotationVector.x, 1, 2) + "\n"
        + "y: " + nfp(rotationVector.y, 1, 2) + "\n"
        + "z: " + nfp(rotationVector.z, 1, 2) + "\n" + "\n"
+       
+       + "Light Sensor :" + light + "\n"
+       
+       + "Proximity Sensor : " + proximity + "\n"
+       , 20, 0, width, height);
+       
+}
+
+void onAccelerometerEvent(float x, float y, float z, long time, int accuracy)
+{
+  accelerometer.set(x, y, z);
+}
+
+void onMagneticFieldEvent(float x, float y, float z, long time, int accuracy)
+{
+  magneticField.set(x, y, z);
+}
+
+void onGyroscopeEvent(float x, float y, float z, long time, int accuracy)
+{
+  gyroscope.set(x, y, z);
+}
+
+void onLinearAccelerationEvent(float x, float y, float z, long time, int accuracy)
+{
+  linearAcceleration.set(x, y, z);
+}
+
+void onRotationVectorEvent(float x, float y, float z, long time, int accuracy)
+{
+  rotationVector.set(x, y, z);
+}
+
+void onLightEvent(float v)
+{
+  light = v;
+}
+
+void onProximityEvent(float v)
+{
+  proximity = v;
+}
+  
+public void mousePressed(){
+  if (sensor.isStarted())
+    sensor.stop();
+  else
+    sensor.start();
+  println("Marcos isStarted: " + sensor.isStarted());
+}
        
