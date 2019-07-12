@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.enterthedojo.marcos">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="26"/>
+    <application android:icon="@drawable/icon" android:label="">
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCEPT_HANDOVER"/>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER"/>
+    <uses-permission android:name="android.permission.ADD_VOICEMAIL"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.BIND_AUTOFILL_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_CARRIER_MESSAGING_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_CARRIER_SERVICES"/>
+    <uses-permission android:name="android.permission.BIND_CHOOSER_TARGET_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_CONDITION_PROVIDER_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"/>
+    <uses-permission android:name="android.permission.BIND_DREAM_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_INCALL_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_INPUT_METHOD"/>
+    <uses-permission android:name="android.permission.BIND_MIDI_DEVICE_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_NFC_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_PRINT_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE"/>
+    <uses-permission android:name="android.permission.BIND_REMOTEVIEWS"/>
+    <uses-permission android:name="android.permission.BIND_SCREENING_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_TELECOM_CONNECTION_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_TEXT_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_TV_INPUT"/>
+    <uses-permission android:name="android.permission.BIND_VISUAL_VOICEMAIL_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_VOICE_INTERACTION"/>
+    <uses-permission android:name="android.permission.BIND_VPN_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_VR_LISTENER_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_WALLPAPER"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+</manifest>
