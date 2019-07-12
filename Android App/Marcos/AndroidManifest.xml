@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:versionCode="1" android:versionName="1.0" package="com.enterthedojo.marcos"
     tools:ignore="GoogleAppIndexingWarning">
     <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="28"/>
-    <application android:icon="@drawable/icon-36.png, @drawable/icon-48.png, @drawable/icon-72.png, @drawable/icon-96.png, @drawable/icon-144.png, @drawable/icon-192.png" android:label=""
+    <application android:icon="@drawable/icon.png" android:label=""
         android:fullBackupContent="@xml/backup_descriptor">
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.enterthedojo.marcos">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="26"/>
+    <application android:icon="@drawable/icon" android:label="">
+>>>>>>> 25aaf39a7088914171f3429b13fb2e4bd33b28a7
         <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
