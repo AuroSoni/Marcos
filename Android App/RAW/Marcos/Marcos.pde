@@ -26,29 +26,29 @@ void draw()
   
        + "Accelerometer :" + "\n"
        
-       + "x: " + nfp(accelerometer.x, 1, 2) + "m/s2" + "\n"
-       + "y: " + nfp(accelerometer.y, 1, 2) + "m/s2" + "\n"
-       + "z: " + nfp(accelerometer.z, 1, 2) + "m/s2" + "\n" + "\n"
+       + "x: " + nfp(accelerometer.x, 1, 2) + " m/s2" + "\n"
+       + "y: " + nfp(accelerometer.y, 1, 2) + " m/s2" + "\n"
+       + "z: " + nfp(accelerometer.z, 1, 2) + " m/s2" + "\n" + "\n"
        
        
        + "MagneticField: " + "\n"
        
-       + "x: " + nfp(magneticField.x, 1, 2) + "uT" + "\n"
-       + "y: " + nfp(magneticField.y, 1, 2) + "uT" + "\n"
-       + "z: " + nfp(magneticField.z, 1, 2) + "uT" + "\n" + "\n"
+       + "x: " + nfp(magneticField.x, 1, 2) + " uT" + "\n"
+       + "y: " + nfp(magneticField.y, 1, 2) + " uT" + "\n"
+       + "z: " + nfp(magneticField.z, 1, 2) + " uT" + "\n" + "\n"
        
        
        + "Gyroscope :" + "\n"
        
-       + "x: " + nfp(gyroscope.x, 1, 2) + "rads/sec" + "\n"
-       + "y: " + nfp(gyroscope.y, 1, 2) + "rads/sec" + "\n"
-       + "z: " + nfp(gyroscope.z, 1, 2) + "rads/sec" + "\n"+ "\n"
+       + "x: " + nfp(gyroscope.x, 1, 2) + " rads/sec" + "\n"
+       + "y: " + nfp(gyroscope.y, 1, 2) + " rads/sec" + "\n"
+       + "z: " + nfp(gyroscope.z, 1, 2) + " rads/sec" + "\n"+ "\n"
        
        
        + "Linear Acceleration :" + "\n"
-       + "x: " + nfp(linearAcceleration.x, 1, 2) + "m/s2" + "\n"
-       + "y: " + nfp(linearAcceleration.y, 1, 2) + "m/s2" + "\n"
-       + "z: " + nfp(linearAcceleration.z, 1, 2) + "m/s2" + "\n" + "\n"
+       + "x: " + nfp(linearAcceleration.x, 1, 2) + " m/s2" + "\n"
+       + "y: " + nfp(linearAcceleration.y, 1, 2) + " m/s2" + "\n"
+       + "z: " + nfp(linearAcceleration.z, 1, 2) + " m/s2" + "\n" + "\n"
        
        
        + "Rotation Vector :" + "\n"
@@ -57,7 +57,7 @@ void draw()
        + "y: " + nfp(rotationVector.y, 1, 2) + "\n"
        + "z: " + nfp(rotationVector.z, 1, 2) + "\n" + "\n"
        
-       + "Light Sensor :" + light + "\n" + "\n"
+       + "Light Sensor :" + light + " lx" + "\n" + "\n"
        
        + "Proximity Sensor : " + proximity + "\n" + "\n"
        , 20, 0, width, height);
