@@ -12,16 +12,16 @@ void setup(){
   gyroscope = new PVector();
   linearAcceleration = new PVector();
   rotationVector = new PVector();
-  orientation(auto);
+ // orientation(auto);
   textAlign(LEFT, CENTER);
-  textSize(14);
+  textSize(24);
 
 }
 
 void draw()
 {
-  background(255, 255, 255);
-  text("MARCOS" + "\n"
+  background(0, 0, 0);
+  text("MARCOS" + "\n" + "\n" + "\n"
   
   
        + "Accelerometer :" + "\n"
@@ -42,7 +42,7 @@ void draw()
        
        + "x: " + nfp(gyroscope.x, 1, 2) + "rads/sec" + "\n"
        + "y: " + nfp(gyroscope.y, 1, 2) + "rads/sec" + "\n"
-       + "z: " + nfp(gyroscope.z, 1, 2) + "rads/sec" + "\n"
+       + "z: " + nfp(gyroscope.z, 1, 2) + "rads/sec" + "\n"+ "\n"
        
        
        + "Linear Acceleration :" + "\n"
@@ -57,9 +57,9 @@ void draw()
        + "y: " + nfp(rotationVector.y, 1, 2) + "\n"
        + "z: " + nfp(rotationVector.z, 1, 2) + "\n" + "\n"
        
-       + "Light Sensor :" + light + "\n"
+       + "Light Sensor :" + light + "\n" + "\n"
        
-       + "Proximity Sensor : " + proximity + "\n"
+       + "Proximity Sensor : " + proximity + "\n" + "\n"
        , 20, 0, width, height);
        
 }
