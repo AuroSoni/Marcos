@@ -1,5 +1,7 @@
 import ketai.sensors.*;
+import ketai.camera.*;
 KetaiSensor sensor;
+KetaiCamera cam;
 PVector magneticField, accelerometer, gyroscope, linearAcceleration, rotationVector;
 float light, proximity;
 
@@ -15,6 +17,12 @@ void setup(){
  // orientation(auto);
   textAlign(LEFT, CENTER);
   textSize(24);
+  cam = new KetaiCamera(this, 1280, 768, 30);
+  println(cam.list()); // 1
+  // 0: back camera; 1: front camera
+  cam.setCameraID(0); // 2
+  imageMode(CENTER);
+  stroke(255);
 
 }
 
@@ -62,6 +70,10 @@ void draw()
        + "Proximity Sensor : " + proximity + "\n" + "\n"
        , 20, 0, width, height);
        
+       
+        image(cam, width/2, height/2, width, height);
+        drawUI(); // 4
+       
 }
 
 void onAccelerometerEvent(float x, float y, float z, long time, int accuracy)
@@ -105,5 +117,54 @@ public void mousePressed(){
   else
     sensor.start();
   println("Marcos isStarted: " + sensor.isStarted());
+  
+   if (mouseY <= 100) { // 4
+    if (mouseX > 0 && mouseX < width/4) { // 5
+      if (cam.isStarted())
+        cam.stop();
+      else {
+        if (!cam.start())
+          println("Failed to start camera.");
+      }
+    }
+    else if (mouseX > width/4 && mouseX < 2*(width/4)) { // 6
+      int cameraID = 0;
+      if (cam.getCameraID() == 0)
+        cameraID = 1;
+      else
+        cameraID = 0;
+      cam.stop();
+      cam.setCameraID(cameraID);
+      cam.start();
+    }
+    else if (mouseX >2*(width/4) && mouseX < 3*(width/4)) { // 7
+      if (cam.isFlashEnabled()) // 8
+        cam.disableFlash();
+      else
+        cam.enableFlash();
+    }
+  }
 }
+
+void drawUI() { // 1
+  fill(0, 128);
+  rect(0, 0, width/4, 100);
+  rect(width/4, 0, width/4, 100);
+  rect(2*(width/4), 0, width/4, 100);
+  rect(3*(width/4), 0, width/4, 100);
+  fill(255);
+  if (cam.isStarted())  // 2
+    text("stop", 20, 70);
+  else
+    text("start", 20, 70);
+  text("camera", (width/4)+20, 70);
+  text("flash", 2*(width/4)+20, 70);
+}
+
        
+       void onCameraPreviewEvent() {
+  cam.read();
+}
+void exit() {
+  cam.stop();
+}
